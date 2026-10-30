@@ -16,17 +16,44 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 DB_FILE = "alqarawi_db.json"
 
 DEFAULT = {
- "branches": [
-  {"name": "صناعية السليم ١", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966163274444", "loc": "https://share.google/KVhZpBRi4vOvGJcD", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
-  {"name": "صناعية السليم ٢", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966163274444", "loc": "https://maps.app.goo.gl/Qvbomn7VyQEhRNDA", "img": "", "rating": 4.8, "lat": 26.36, "lng": 43.97}
+  "branches": [
+  {"name": "بريدة الرئيسي", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى9:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966536405559", "loc": "https://maps.app.goo.gl/2As6CtLgDfHn9eif6", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "الشارع التجارى", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "phone": "966533265553", "loc": "https://maps.app.goo.gl/kadYqCgimJiHbQ1Z7", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "شارع الخبيب", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "phone": "966553285559", "loc": "https://maps.app.goo.gl/RxVEChesgGBTmRir6", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "صناعية السليم1", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966553120500", "loc": "https://maps.app.goo.gl/MP8j7TyGdi7U9ZpM8", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "الزلفى", "city": "الزلفى", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966558685557", "loc": "https://maps.app.goo.gl/qJvWtaBy651mtKnW8", "img": "", "rating": 4.8, "lat": 26.3, "lng": 44.81},
+  {"name": "الرس", "city": "الرس", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966558265557", "loc": "https://maps.app.goo.gl/sLsaG8JUVevvxryr7", "img": "", "rating": 4.8, "lat": 25.869, "lng": 43.498},
+  {"name": "عنيزة", "city": "عنيزة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966558605551", "loc": "https://maps.app.goo.gl/5qYfzDkYvcSZJaxt9", "img": "", "rating": 4.8, "lat": 26.089, "lng": 43.993},
+  {"name": "صناعية السليم2", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966538465558", "loc": "https://maps.app.goo.gl/dps5gZbMW6uDSPHL9", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "حفر الباطن", "city": "حفر الباطن", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966558615559", "loc": "https://maps.app.goo.gl/g3n2T5f1Vx3NSc75A", "img": "", "rating": 4.8, "lat": 28.432, "lng": 45.96},
+  {"name": "صناعية الرواف", "city": "بريدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966553405558", "loc": "https://maps.app.goo.gl/iDWhMc51rv2jepfH6", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "حائل صناعية الجربوع", "city": "حائل", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966507105558", "loc": "https://maps.app.goo.gl/na3TAJZHkHd71psW7", "img": "", "rating": 4.8, "lat": 27.52, "lng": 41.69},
+  {"name": "العزيزية", "city": "المدينة المنورة", "hours1": "من 8 صباحا إلى الساعة 2:00 مساء", "hours2": "من بعد آذان العصر بنصف ساعة إلى اذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى اذان العشاء", "phone": "966558425557", "loc": "https://maps.app.goo.gl/3KeaTkvXTft66xyLA", "img": "", "rating": 4.8, "lat": 24.46, "lng": 39.61},
+  {"name": "الكيلو 14", "city": "جدة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "phone": "966550565553", "loc": "https://maps.app.goo.gl/oGDsNVQraZBwJniv5", "img": "", "rating": 4.8, "lat": 21.5433, "lng": 39.1728},
+  {"name": "جدة قويزة", "city": "جدة", "hours1": "من 8 صباحا إلى آذان العشاء", "hours2": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966532036555", "loc": "https://maps.app.goo.gl/9odgwFct5Ny6M2Yz7", "img": "", "rating": 4.8, "lat": 21.5433, "lng": 39.1728},
+  {"name": "المجمعة", "city": "المجمعة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966532087555", "loc": "https://maps.app.goo.gl/1qzD4VfNaFaLXN3eA", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "عروة", "city": "المدينة المنورة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "phone": "966532064555", "loc": "https://maps.app.goo.gl/6xcRJr6gTKb6Ath2A", "img": "", "rating": 4.8, "lat": 24.46, "lng": 39.61},
+  {"name": "مكة", "city": "مكة المكرمة", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "friday": "من بعد آذان العصر بنصف ساعة إلى8:30 مساء", "phone": "966533941555", "loc": "https://maps.app.goo.gl/9UU79jGiGUhDkRoRA", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "سكاكا", "city": "الجوف", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من بعد آذان العصر بنصف ساعة إلى آذان العشاء", "phone": "966532042555", "loc": "https://maps.app.goo.gl/ApgofeGqCEiJwiGQ9", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "الطائف", "city": "الطائف", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966532037555", "loc": "https://maps.app.goo.gl/Jcmhty6ETF7SQ5sb8", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "تبوك", "city": "تبوك", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966558682121", "loc": "", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "محايل عسير", "city": "محايل عسير", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966535482555", "loc": "https://maps.app.goo.gl/N6TK7T2VKyMo4eJX6", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "خميس مشيط", "city": "خمبس مشيط", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى آذان العشاء", "friday": "من الساعة2:00 مساء  إلى آذان العشاء", "phone": "966533042323", "loc": "https://maps.app.goo.gl/Crgy7YBvRHLHg8Wc9", "img": "", "rating": 4.8, "lat": 26.359, "lng": 43.968},
+  {"name": "النسيم1", "city": "الرياض", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "friday": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "phone": "966502382555", "loc": "https://maps.app.goo.gl/bYnV1SfrpKCvQxkA7", "img": "", "rating": 4.8, "lat": 24.7136, "lng": 46.6753},
+  {"name": "ام الحمام", "city": "الرياض", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "friday": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "phone": "966536212555", "loc": "https://maps.app.goo.gl/91ar5EZyNxTN92Xo8", "img": "", "rating": 4.8, "lat": 24.7136, "lng": 46.6753},
+  {"name": "النسيم2", "city": "الرياض", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "friday": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "phone": "966559842555", "loc": "", "img": "", "rating": 4.8, "lat": 24.7136, "lng": 46.6753},
+  {"name": "صناعية الرمال", "city": "الرياض", "hours1": "من 8 صباحا إلى آذان الظهر", "hours2": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "friday": "من الساعة2:00 مساء  إلى الساعة 9:30 مساء", "phone": "966537412555", "loc": "", "img": "", "rating": 4.8, "lat": 24.7136, "lng": 46.6753}
  ],
  "products": [],
  "users": [{"name": "مصطفى", "pass": "1234", "perms": ["branches","ads","hours","add","users","marquee","reviews"]}],
  "reviews": [],
  "notify_phones": ["966163274444"],
  "main_phone": "966163274444",
- "marquee_text": "صناعية السليم ١ • صناعية السليم ٢ • بريدة الرئيسي • دوام بعد آذان العصر بنصف ساعة إلى آذان العشاء • تقييمك يهمنا - شاركنا موقعك يجيبلك اقرب فرع"
+ "marquee_text": "بريدة الرئيسي • الشارع التجارى • شارع الخبيب • صناعية السليم 1 و 2 • الزلفى • الرس • عنيزة • بريدة الرئيسي • دوام بعد آذان العصر بنصف ساعة إلى آذان العشاء • تقييمك يهمنا - شاركنا موقعك يجيبلك اقرب فرع • ٨ فروع - قطع أصلية"
 }
+
+
+
 
 def get_excel_path():
     for pat in ["*القرعاوي*.xlsx","*branches*.xlsx","*فروع*.xlsx","Alqarawi*.xlsx"]:
@@ -116,12 +143,20 @@ header{display:flex;justify-content:space-between;align-items:center;padding:12p
 .open-badge{position:absolute;top:10px;left:10px;padding:8px 14px;border-radius:999px;font-size:13px;font-weight:900;z-index:5;border:1px solid rgba(0,0,0,0.1);color:#fff!important;text-shadow:0 1px 1px rgba(0,0,0,0.3)}
 .open{ background:#16a34a!important;color:#fff!important; border:1px solid #15803d } .closed{ background:#dc2626!important;color:#fff!important; } .calculating{ background:#d97706!important;color:#fff!important; }
 .search-box{border:2px solid #000;border-radius:12px;padding:16px;margin:12px 0;background:#f9fafb;box-sizing:border-box;overflow:hidden} .search-box *{box-sizing:border-box} .search-box input{max-width:100%;margin:8px 0;display:block}
-.voice-btn{background:#7c3aed;color:#fff;padding:12px 18px;border-radius:999px;border:0;font-weight:800;font-size:16px;cursor:pointer}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}} .voice-btn{background:#7c3aed;color:#fff;padding:12px 18px;border-radius:999px;border:0;font-weight:800;font-size:16px;cursor:pointer}
 .review-box{border:2px solid #22c55e;border-radius:12px;padding:12px;margin:8px 0;background:#f0fdf4}
 .footer{background:#0a0a0a;color:#fff;text-align:center;padding:24px}
+#sidebar{position:fixed;top:0;right:-320px;width:300px;height:100vh;background:#fff;border-left:3px solid #000;z-index:200;transition:0.3s;overflow-y:auto;padding:16px;box-shadow:-4px 0 20px rgba(0,0,0,0.2)}
+#sidebar.open{right:0}
+#overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:150;display:none} #overlay.show{display:block}
 </style></head>
 <body>
-<header style="display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:#fff;border-bottom:2px solid #000;position:sticky;top:0;z-index:20"><div style="display:flex;align-items:center;gap:10px"><img src="/static/logo.jpg" style="width:58px;height:58px;border-radius:12px;border:2px solid #000;object-fit:cover;background:#fff" onerror="this.src='/static/logo.jpg'"><b style="font-size:16px;color:#000">شركة القرعاوي</b></div><div style="display:flex;gap:6px;align-items:center"><a class="btn btn-g" href="https://api.whatsapp.com/send?phone={{main_phone}}" style="padding:8px 14px;font-size:13px">واتساب</a><a class="btn btn-b" href="tel:+{{main_phone}}" style="padding:8px 14px;font-size:13px;background:#000;color:#fff;border:1px solid #000">📞</a></div></header>
+<div id="overlay" onclick="closeSidebar()"></div>
+<div id="sidebar">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;border-bottom:2px solid #000;padding-bottom:12px"><b>القائمة - ٨ فروع</b><button onclick="closeSidebar()" style="background:#000;color:#fff;border:0;padding:8px 14px;border-radius:999px">✕</button></div>
+<div style="display:flex;flex-direction:column;gap:8px"><a href="/" style="padding:12px;border-radius:8px;background:#f9fafb;border:1px solid #ddd;text-decoration:none;color:#000;font-weight:800">🏠 الرئيسية</a><a href="#branches" onclick="closeSidebar()" style="padding:12px;border-radius:8px;background:#f9fafb;border:1px solid #ddd;text-decoration:none;color:#000;font-weight:800">📍 فروعنا - ٨ فروع</a><a href="#ads" onclick="closeSidebar()" style="padding:12px;border-radius:8px;background:#fef2f2;border:1px solid #e11d48;text-decoration:none;color:#e11d48;font-weight:800">📢 إعلاناتنا</a></div></div>
+
+<header style="display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 100%);border-bottom:3px solid #e11d48;position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,0.5)"><div style="display:flex;align-items:center;gap:14px"><img src="/static/logo.jpg" style="width:72px;height:72px;border-radius:14px;border:3px solid #fff;object-fit:cover;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.3)" onerror="this.src='/static/logo.jpg'"><div style="color:#fff"><b style="font-size:20px;color:#fff;letter-spacing:1px;display:block">شركة القرعاوي</b><small style="color:#e11d48;font-weight:800;letter-spacing:2px">TOYOTA - قطع أصلية - ٨ فروع</small></div></div><div style="display:flex;gap:8px;align-items:center"><a class="btn btn-g" href="https://api.whatsapp.com/send?phone={{main_phone}}" style="padding:10px 18px;font-size:13px;box-shadow:0 2px 8px rgba(34,197,94,0.3)">واتساب</a><button onclick="openSidebar()" style="padding:10px 16px;background:#fff;color:#000;border:0;border-radius:999px;font-weight:900;box-shadow:0 2px 8px rgba(255,255,255,0.2)">☰</button></div></header>
 
 <div style="background:#000;color:#fff;overflow:hidden;white-space:nowrap;padding:10px 0;font-size:15px;font-weight:900;line-height:1.5;border-bottom:2px solid #222"><marquee scrollamount="6" direction="right"> {{marquee_text}} </marquee></div>
 
@@ -130,12 +165,34 @@ header{display:flex;justify-content:space-between;align-items:center;padding:12p
 <h2 style="margin:0 0 12px">🔍 ابحث بذكاء - ٣ طرق</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
 
-<div class="search-box" style="border-color:#e11d48;background:#fef2f2">
-<h3 style="margin:0 0 8px">٢- بحث برقم الشاصي VIN (17 رقم)</h3>
-<p style="font-size:13px;margin:4px 0">اكتب رقم الشاصي - نطلع لك القطع المناسبة لسيارتك بالظبط</p>
-<input id="vinInput" placeholder="JTDKB20U093456789 - 17 حرف انجليزي بالظبط - لا اكتر ولا اقل" maxlength="17" pattern="[A-Za-z0-9]{17}" title="17 حرف ورقم انجليزي بالظبط" style="width:100%;padding:12px;border-radius:8px;border:2px solid #e11d48;font-size:16px;direction:ltr;text-transform:uppercase;letter-spacing:2px;font-weight:800" oninput="let v=this.value.toUpperCase().replace(/[^A-Z0-9]/g,''); if(this.value!==v) this.value=v; document.getElementById('vinCount').innerHTML=this.value.length+'/17 - '+(this.value.length==17?'✅ مظبوط - أحرف وأرقام انجليزي':'❌ لازم 17 - '+(17-this.value.length)+' باقي')+ ' - '+(this.value!==this.value.toLowerCase()?'كبير ✅':'')" style="width:100%;padding:12px;border-radius:8px;border:1px solid #e11d48;font-size:16px">
-<div id="vinCount" style="font-size:12px;margin-top:8px;color:#111;font-weight:700;background:#fff;padding:6px 10px;border-radius:6px;border:1px solid #eee;display:inline-block">0/17 - لازم 17 بالظبط - انجليزي فقط</div><button onclick="searchVIN()" style="width:100%;margin-top:8px;padding:12px;background:#e11d48;color:#fff;border:0;border-radius:8px;font-weight:800">🔍 ابحث بقطع الشاصي - يرسل واتساب</button>
-<div id="vinResult" style="margin-top:8px;font-size:13px"></div>
+<div class="search-box" style="border-color:#e11d48;background:linear-gradient(135deg,#fef2f2 0%,#fff 100%);box-shadow:0 4px 16px rgba(225,29,72,0.15);border-width:3px">
+<h3 style="margin:0 0 8px;color:#000;font-size:18px">🔍 بحث برقم الشاصي VIN (17 رقم) - التصميم الفخم</h3>
+<p style="font-size:13px;margin:4px 0;color:#444">اكتب رقم الشاصي - اختار الفرع - اكتب المطلوب - صور القطعة - يرسل واتس خدمة العملاء - الشريط والإعلانات شغالين</p>
+
+<label style="font-weight:800;font-size:13px;margin-top:10px;display:block">١- رقم الشاصي - 17 حرف انجليزي - يتحول كبير أوتوماتيك:</label>
+<input id="vinInput" placeholder="JTDKB20U093456789 - 17 حرف انجليزي بالظبط" maxlength="17" pattern="[A-Za-z0-9]{17}" title="17 حرف ورقم انجليزي بالظبط" style="width:100%;padding:14px;border-radius:10px;border:3px solid #e11d48;font-size:18px;direction:ltr;text-transform:uppercase;letter-spacing:3px;font-weight:900;background:#fff;color:#000;box-shadow:inset 0 2px 8px rgba(0,0,0,0.05)" oninput="let v=this.value.toUpperCase().replace(/[^A-Z0-9]/g,''); if(this.value!==v) this.value=v; document.getElementById('vinCount').innerHTML=this.value.length+'/17 - '+(this.value.length==17?'✅ مظبوط - أحرف وأرقام انجليزي كبيرة':'❌ لازم 17 - '+(17-this.value.length)+' باقي')">
+
+<div id="vinCount" style="font-size:13px;margin-top:8px;color:#111;font-weight:800;background:#fff;padding:8px 12px;border-radius:8px;border:2px solid #e11d48;display:inline-block;box-shadow:0 2px 6px rgba(0,0,0,0.05)">0/17 - لازم 17 بالظبط - انجليزي فقط - يكبر أوتوماتيك</div>
+
+<label style="font-weight:800;font-size:13px;margin-top:12px;display:block">٢- اختار الفرع - قائمة منسدلة - العميل هو اللي يختار - من ملفك - 26 فرع:</label>
+<select id="vinBranch" style="width:100%;padding:12px;border-radius:10px;border:2px solid #000;font-size:15px;background:#fff;color:#000;font-weight:700">
+<option value="">اختار الفرع - 26 فرع - العميل يختار</option>
+{% for b in branches %}<option value="{{b.name}} - {{b.city}}">{{b.name}} - {{b.city}} - {{b.phone}}</option>{% endfor %}
+</select>
+
+<label style="font-weight:800;font-size:13px;margin-top:12px;display:block">٣- العميل يكتب المطلوب:</label>
+<textarea id="vinNeed" placeholder="مثال: عايز مساعد امامي يمين كامري 2018 - فلتر زيت - تيل فرامل - اكتب كل اللي محتاجه - بالتفصيل" style="width:100%;padding:12px;border-radius:10px;border:2px solid #000;min-height:80px;font-size:14px;background:#fff;color:#000"></textarea>
+
+<label style="font-weight:800;font-size:13px;margin-top:12px;display:block">٤- صور بالكاميرا أو رفع صورة أو أكتر - صور القطعة القديمة أو الشاصي:</label>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0">
+<label style="flex:1;min-width:120px;padding:12px;background:#000;color:#fff;border-radius:10px;text-align:center;cursor:pointer;font-weight:800;border:2px solid #000">📷 صور بالكاميرا<input id="vinCam" type="file" accept="image/*" capture="environment" multiple style="display:none" onchange="previewVinImages(this)"></label>
+<label style="flex:1;min-width:120px;padding:12px;background:#fff;color:#000;border-radius:10px;text-align:center;cursor:pointer;font-weight:800;border:2px solid #000">🖼️ رفع صورة/صور<input id="vinImgs" type="file" accept="image/*" multiple style="display:none" onchange="previewVinImages(this)"></label>
+</div>
+<div id="vinPreview" style="display:flex;gap:8px;flex-wrap:wrap;margin:8px 0"></div>
+<div id="vinPreviewCount" style="font-size:12px;color:#666"></div>
+
+<button onclick="searchVIN()" style="width:100%;margin-top:12px;padding:16px;background:linear-gradient(135deg,#e11d48 0%,#991b1b 100%);color:#fff;border:0;border-radius:12px;font-weight:900;font-size:16px;box-shadow:0 4px 16px rgba(225,29,72,0.4)">📤 ارسل بالشاصي والمطلوب والصور - واتس خدمة العملاء - {{main_phone}}</button>
+<div id="vinResult" style="margin-top:12px;font-size:13px;background:#fff;padding:12px;border-radius:10px;border:1px solid #eee"></div>
 </div>
 
 <div class="search-box" style="border-color:#7c3aed;background:#f5f3ff">
@@ -316,56 +373,161 @@ function shareLocation(){
 }
 
 // 2- بحث برقم الشاصي VIN
+function openSidebar(){document.getElementById('sidebar').classList.add('open');document.getElementById('overlay').classList.add('show')}
+function closeSidebar(){document.getElementById('sidebar').classList.remove('open');document.getElementById('overlay').classList.remove('show')}
+let vinFiles=[];
+function previewVinImages(input){
+ let preview=document.getElementById('vinPreview');
+ let count=document.getElementById('vinPreviewCount');
+ vinFiles=Array.from(input.files);
+ preview.innerHTML='';
+ vinFiles.forEach((file,i)=>{
+  let reader=new FileReader();
+  reader.onload=function(e){
+   let div=document.createElement('div');
+   div.style.cssText='position:relative;width:80px;height:80px;border:2px solid #000;border-radius:8px;overflow:hidden';
+   div.innerHTML=`<img src="${e.target.result}" style="width:100%;height:100%;object-fit:cover"><span style="position:absolute;top:2px;right:2px;background:#000;color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer" onclick="this.parentElement.remove()">✕</span>`;
+   preview.appendChild(div);
+  };
+  reader.readAsDataURL(file);
+ });
+ count.innerHTML=`✅ تم اختيار ${vinFiles.length} صورة - ستُرسل مع رسالة الواتساب - بعد فتح الواتساب ارفق الصور من المعرض`;
+}
+
 function searchVIN(){
  let vin=document.getElementById('vinInput').value.trim().toUpperCase();
+ let branch=document.getElementById('vinBranch').value;
+ let need=document.getElementById('vinNeed').value.trim();
  let res=document.getElementById('vinResult');
- if(vin.length<10){ res.innerHTML='اكتب رقم الشاصي كامل - 17 حرف ورقم'; return; }
- if(vin.length!==17){ res.innerHTML='رقم الشاصي لازم 17 حرف ورقم - انت كاتب '+vin.length; }
- let msg=`طلب قطع برقم الشاصي VIN\nالشاصي: ${vin}\nالفرع: صناعية السليم\nارجو تزويدي بالقطع المناسبة لهذا الشاصي - تويوتا اصلية`;
+ if(vin.length<10){ res.innerHTML='❌ اكتب رقم الشاصي كامل - 17 حرف ورقم انجليزي'; return; }
+ if(vin.length!==17){ res.innerHTML='❌ رقم الشاصي لازم 17 حرف ورقم - انت كاتب '+vin.length+' - باقي '+(17-vin.length); return; }
+ if(!branch){ res.innerHTML='❌ اختار الفرع من القائمة المنسدلة - ٨ فروع'; return; }
+ if(!need){ res.innerHTML='❌ اكتب المطلوب - العميل يكتب المطلوب - مثال: مساعد امامي كامري 2018'; return; }
+ let hasImages = vinFiles && vinFiles.length>0;
+ let msg=`🚗 طلب قطع برقم الشاصي - شركة القرعاوي الفخمة
+━━━━━━━━━━━━━━━━━━
+🔢 رقم الشاصي VIN: ${vin}
+📍 الفرع المختار: ${branch}
+📝 المطلوب: ${need}
+📸 الصور المرفقة: ${hasImages ? vinFiles.length+' صورة - انظر المرفقات' : 'لا يوجد - العميل لم يرفق صور'}
+━━━━━━━━━━━━━━━━━━
+🏢 شركة القرعاوي - قطع غيار تويوتا أصلية
+📞 خدمة العملاء: {{main_phone}}
+🌐 https://alqarawi.onrender.com
+تم عبر الموقع - بحث الشاصي + كتابة + صور - تصميم فخم`;
  let enc=encodeURIComponent(msg);
  let wa=`https://api.whatsapp.com/send?phone={{main_phone}}&text=${enc}`;
- res.innerHTML=`✅ الشاصي: <b>${vin}</b><br>جاري تحويلك لواتساب خدمة العملاء - نطلع لك القطع المناسبة...<br><a href="${wa}" target="_blank" style="background:#e11d48;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;display:inline-block;margin-top:8px">📤 ارسل الشاصي واتساب - {{main_phone}}</a>`;
- setTimeout(()=>{window.open(wa,'_blank');},800);
+ res.innerHTML=`✅ تم تجهيز الطلب الفخم:<br>🔢 الشاصي: <b style="letter-spacing:2px;background:#000;color:#fff;padding:4px 8px;border-radius:6px">${vin}</b><br>📍 الفرع: <b>${branch}</b><br>📝 المطلوب: ${need}<br>📸 الصور: ${hasImages ? vinFiles.length+' صورة جاهزة' : 'بدون صور'}<br><br>
+ <div style="background:#fefce8;border:2px solid #eab308;border-radius:10px;padding:10px;margin:8px 0;font-size:12px">
+ ⚠️ مهم: بعد ما تدوس واتساب - افتح الواتساب - الصور اللي اخترتها (${hasImages ? vinFiles.length : 0}) - لازم ترفقها يدوي من زر المرفقات 📎 - عشان واتساب ما يسمحش ارسال صور اوتوماتيك من الموقع
+ </div>
+ <a href="${wa}" target="_blank" style="background:linear-gradient(135deg,#e11d48 0%,#991b1b 100%);color:#fff;padding:14px 24px;border-radius:999px;text-decoration:none;display:inline-block;margin-top:8px;font-weight:900;box-shadow:0 4px 16px rgba(225,29,72,0.4)">📤 افتح واتساب خدمة العملاء - ارسل الشاصي والكتابة - وارفق الصور</a>
+ <div style="margin-top:12px"><small>الشعار الرخامي - خلفية سودة - شركة القرعاوي - تصميم فخم</small></div>`;
+ // Try Web Share API with files if available - for mobile
+ if(navigator.share && hasImages && navigator.canShare && navigator.canShare({files: vinFiles})){
+   navigator.share({title: 'طلب قطع '+vin, text: msg, files: vinFiles}).then(()=>{ res.innerHTML+='<br>✅ تمت المشاركة بالصور - واتساب'; }).catch(()=>{ setTimeout(()=>{window.open(wa,'_blank');},800); });
+ } else {
+   setTimeout(()=>{window.open(wa,'_blank');},800);
+ }
 }
 
 // 6- اطلب بصوتك
 let recognition;
 let voiceTranscript='';
+let isRecording=false;
 function startVoice(){
  let btn=document.getElementById('voiceBtn');
  let textDiv=document.getElementById('voiceText');
  let sendBtn=document.getElementById('voiceSend');
  if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
-  textDiv.innerHTML='المتصفح لا يدعم التعرف على الصوت - استخدم Chrome على الجوال - او اكتب طلبك واتساب';
+  textDiv.innerHTML='❌ المتصفح لا يدعم التعرف على الصوت - استخدم Chrome على الجوال - أو اكتب طلبك واتساب<br>💡 حل: افتح الموقع بـ Chrome - مش فيسبوك - دوس 3 نقط - افتح في Chrome';
+  return;
+ }
+ if(isRecording && recognition){
+  try{ recognition.stop(); }catch(e){}
+  isRecording=false;
+  btn.innerHTML='🎤 اضغط وتكلم - اطلب قطعتي';
+  btn.style.background='#7c3aed';
   return;
  }
  let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
- recognition = new SpeechRecognition();
- recognition.lang='ar-SA';
- recognition.interimResults=false;
- recognition.maxAlternatives=1;
- btn.innerHTML='🎙️ اسمعك... تكلم الآن';
- btn.style.background='#ef4444';
- textDiv.innerHTML='🎤 اسمعك... قول: عايز مساعد امامي كامري 2018';
- recognition.start();
- recognition.onresult = function(event){
-  voiceTranscript = event.results[0][0].transcript;
-  textDiv.innerHTML='✅ سمعتك: <b>'+voiceTranscript+'</b>';
-  sendBtn.style.display='block';
-  btn.innerHTML='🎤 اضغط وتكلم مرة اخرى';
-  btn.style.background='#7c3aed';
- };
- recognition.onerror = function(e){
-  textDiv.innerHTML='خطأ: '+e.error+' - حاول مرة اخرى - او اكتب يدوي';
+ try{
+  recognition = new SpeechRecognition();
+  recognition.lang='ar-SA';
+  recognition.lang='ar';
+  recognition.interimResults=true;
+  recognition.continuous=false;
+  recognition.maxAlternatives=3;
+  btn.innerHTML='🔴 اسمعك... تكلم الآن - دوس تاني للوقف';
+  btn.style.background='#ef4444';
+  btn.style.animation='pulse 1s infinite';
+  textDiv.innerHTML='🎤 اسمعك... قول: عايز مساعد امامي كامري 2018 - اتكلم بوضوح - قرب الموبايل منك';
+  textDiv.style.background='#fef2f2';
+  textDiv.style.border='2px solid #ef4444';
+  recognition.start();
+  isRecording=true;
+  recognition.onstart = function(){
+   textDiv.innerHTML='🎙️ بدأ التسجيل... اتكلم الآن - قول طلبك';
+   btn.innerHTML='🔴 بسجل... دوس للوقف';
+  };
+  recognition.onresult = function(event){
+   let transcript='';
+   for(let i=0;i<event.results.length;i++){
+    transcript+=event.results[i][0].transcript+' ';
+   }
+   voiceTranscript = transcript.trim();
+   textDiv.innerHTML='✅ سمعتك: <b style="font-size:16px;color:#000;background:#fff;padding:4px 8px;border-radius:6px">'+voiceTranscript+'</b><br><small>لو صح دوس ارسال واتساب - لو غلط دوس تاني وتكلم</small>';
+   textDiv.style.background='#f0fdf4';
+   textDiv.style.border='2px solid #22c55e';
+   if(event.results[0].isFinal){
+    sendBtn.style.display='block';
+    btn.innerHTML='🎤 اضغط وتكلم مرة اخرى - لو عايز تغير';
+    btn.style.background='#7c3aed';
+    btn.style.animation='none';
+    isRecording=false;
+   }
+  };
+  recognition.onerror = function(e){
+   console.log(e);
+   let msg='خطأ: '+e.error;
+   if(e.error==='not-allowed' || e.error==='permission-denied'){
+    msg='❌ السماح مرفوض - دوس على علامة القفل فوق - اسمح للميكروفون - أو افتح الإعدادات - اسمح للموقع بالميكروفون - وبعدين دوس تاني';
+   } else if(e.error==='no-speech'){
+    msg='❌ ما سمعتش حاجة - اتكلم بصوت أعلى - قرب الموبايل - دوس تاني وتكلم';
+   } else if(e.error==='audio-capture'){
+    msg='❌ مفيش ميكروفون - تأكد الميكروفون شغال - أو اكتب طلبك يدوي';
+   } else if(e.error==='network'){
+    msg='❌ مشكلة شبكة - تأكد النت شغال - جرب تاني';
+   }
+   textDiv.innerHTML=msg+' - حاول مرة اخرى - أو اكتب يدوي واتساب';
+   textDiv.style.background='#fef2f2';
+   textDiv.style.border='2px solid #e11d48';
+   btn.innerHTML='🎤 اضغط وتكلم - جرب تاني';
+   btn.style.background='#7c3aed';
+   btn.style.animation='none';
+   isRecording=false;
+  };
+  recognition.onend = function(){
+   if(isRecording && !voiceTranscript){
+    textDiv.innerHTML='⏹ وقف التسجيل - ما سمعتش - دوس تاني وتكلم بصوت أوضح';
+   }
+   btn.innerHTML='🎤 اضغط وتكلم - اطلب قطعتي';
+   btn.style.background='#7c3aed';
+   btn.style.animation='none';
+   isRecording=false;
+  };
+  recognition.onspeechend = function(){
+   // auto stop after speech ends
+  };
+ }catch(err){
+  textDiv.innerHTML='❌ خطأ: '+err.message+' - جرب Chrome - أو اكتب طلبك واتساب';
   btn.innerHTML='🎤 اضغط وتكلم';
   btn.style.background='#7c3aed';
- };
- recognition.onend = function(){
-  btn.innerHTML='🎤 اضغط وتكلم';
-  btn.style.background='#7c3aed';
- };
+  isRecording=false;
+ }
 }
 function sendVoice(){
+
  if(!voiceTranscript){ alert('اتكلم اولاً'); return; }
  let msg=`طلب صوتي - صناعية السليم\nالطلب: ${voiceTranscript}\n---\nتم عبر الموقع - اطلب بصوتك`;
  let enc=encodeURIComponent(msg);
@@ -432,7 +594,7 @@ def admin():
             if user["name"]==u and user["pass"]==p:
                 session["user"]=u; return redirect("/admin/panel")
         return "خطأ"
-    return '<form method="post" style="max-width:400px;margin:50px auto;padding:20px;border:1px solid #ddd;border-radius:12px"><h3>⚙️ دخول الموظفين</h3><input name="u" placeholder="اسم" style="width:100%;padding:10px;margin:4px 0"><input name="p" type="password" placeholder="كلمة السر" style="width:100%;padding:10px;margin:4px 0"><button style="width:100%;padding:12px;background:#000;color:#fff;border:0;border-radius:8px">دخول</button></form>'
+    return '<form method="post" style="max-width:400px;margin:50px auto;padding:20px;border:1px solid #ddd;border-radius:12px"><h3>⚙️ دخول الموظفين</h3><input name="u" placeholder="اسم المستخدم" autocomplete="off" style="width:100%;padding:12px;margin:4px 0"><input name="p" type="password" placeholder="كلمة السر" autocomplete="new-password" style="width:100%;padding:10px;margin:4px 0"><button style="width:100%;padding:12px;background:#000;color:#fff;border:0;border-radius:8px">دخول</button></form>'
 
 @app.route("/admin/panel", methods=["GET","POST"])
 def panel():
@@ -509,6 +671,21 @@ def panel():
     {"".join([f"<div style='border:1px solid #ddd;padding:8px;margin:4px 0;border-radius:8px;background:#fff'><b>{p.get('title')}</b><br><small>{p.get('desc')} - {p.get('date')}</small><form method='post' style='display:inline;float:left'><button name='delete_ad' value='{i}' style='background:#e11d48;color:#fff;border:0;padding:4px 8px;border-radius:4px'>حذف</button></form></div>" for i,p in enumerate(db.get("products",[]))]) or "<p>لا يوجد اعلانات - اضف اول اعلان</p>"}
     </div>
     </div>
+    
+    <div style="background:#fff;border:2px solid #000;border-radius:12px;padding:12px;margin:12px 0">
+    <h3>📍 الفروع - ٨ فروع بس - اتفقنا ٨</h3>
+    <p style="font-size:12px;color:#666">اقصى ٨ فروع - تعديل من اكسيل branches.xlsx - عمود المدينة يحسب الآذان - رقم الجوال Text</p>
+    <div style="max-height:300px;overflow-y:auto;border:1px solid #ddd;border-radius:8px;padding:8px">
+    {"".join([f"<div style='border-bottom:1px solid #eee;padding:6px;display:flex;justify-content:space-between'><span>{b.get('name')} - {b.get('city')} - {b.get('phone')}</span><span style='font-size:11px;background:#000;color:#fff;padding:2px 8px;border-radius:999px'>{(b.get('hours1') or '')[:20]}</span></div>" for b in db.get("branches",[])])}
+    </div>
+    <p style="font-size:11px">لتعديل الفروع: عدل ملف branches.xlsx وارفعه - ٨ فروع بس - لما تكتب بعد العصر يظهر تمام - Text</p>
+    </div>
+    <div style="background:#f0f0ff;border:2px solid #6366f1;border-radius:12px;padding:12px;margin:12px 0">
+    <h3>👥 المستخدمين - الصلاحيات</h3>
+    <p style="font-size:12px">مصطفى - 1234 - كل الصلاحيات - لا تظهر جاهزة - لازم كتابة</p>
+    <div>{"".join([f"<div style='border:1px solid #ddd;padding:6px;margin:4px 0;border-radius:6px'><b>{u.get('name')}</b> - {','.join(u.get('perms',[]))}</div>" for u in db.get("users",[])])}</div>
+    </div>
+
     <div style="background:#fffbeb;border:1px solid #f59e0b;border-radius:12px;padding:12px;margin:12px 0">
     <h3>⭐ التقييمات</h3>
     {reviews_html or '<p>لا يوجد</p>'}

@@ -1,0 +1,5 @@
+flask
+gunicorn
+openpyxl
+pillow
+psycopg2-binary
